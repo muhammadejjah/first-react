@@ -1,7 +1,5 @@
 import { Fragment } from "react";
-
-
-const Start = () => {
+const Starting = () => {
     const uname = "muhammad";
     const userNames = ["muhammad", "ali", "mahmpood"];
     return (
@@ -10,10 +8,9 @@ const Start = () => {
                 {uname === "muhammad" ? "hello muhammad" : "hello there"}
             </p>
             <div>
-                names:{userNames.map((el) => <p>{el}</p>)}
-
+                names:{userNames.map((el,i) => <p key={i}>{el}</p>)}
             </div>
         </Fragment>
     );
 }
-export default Start;
+export default Starting;
